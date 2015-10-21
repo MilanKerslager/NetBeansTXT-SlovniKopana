@@ -1,3 +1,11 @@
+// Slovní kopaná
+// Vkládáme slova, která se nesmí opakovat.
+// Každé následující slovo musí začínat na poslední
+// písmeno předchozího slova.
+//
+// TODO: odstranit použití proměnné posledni, tj.
+//       využít seznam.get(seznam.size()-1)
+
 package slovní.kopaná;
 
 import java.util.ArrayList;
@@ -8,6 +16,7 @@ public class SlovníKopaná {
     public static void main(String[] args) {
         ArrayList<String> seznam = new ArrayList<>();
         Scanner vstup = new Scanner(System.in);
+        // proměnná posledni obsahuje minulé zadané slovo
         String posledni = "";
         System.out.print("Vlož slovo: ");
         String něco = vstup.nextLine();
